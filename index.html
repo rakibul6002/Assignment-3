@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- Fontawesome CDN -->
     <script src="https://kit.fontawesome.com/abcf6b4e2d.js" crossorigin="anonymous"></script>
+    <!-- DaisyUI CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -67,7 +70,26 @@
                     </button>
                    
                   </div>
-                  <i class="fa-solid fa-bars lg:hidden text-2xl bg-white px-4 py-3 rounded-full"></i>
+                  <details class=" dropdown lg:hidden ">
+                    <summary class="btn m-1 bg-white text-xl"><i class="fa-solid fa-bars"></i></summary>
+                    <ul class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2  shadow -mx-3">
+                      <li>
+                        <a href="index.html">Home</a>
+                      </li>
+                      <li>
+                        <a href="index.html">Services</a>
+                      </li>
+                      <li>
+                        <a href="index.html">Portfolio</a>
+                      </li>
+                      <li>
+                        <a href="index.html">Blogs</a>
+                      </li>
+                      <li>
+                        <a href="index.html">Contact Us</a>
+                      </li>
+                    </ul>
+                  </details>
              </div>
              <!-- Banner Section -->
               <div>
@@ -91,6 +113,11 @@
         <section class="max-w-screen-xl mx-auto px-8 lg:px-28  ">
             <div>
                 <img class="hidden lg:block mb-5 -ml-10" src="./assets/Vector.png" alt="">
+            </div>
+            <div class="flex items-center justify-center mb-8 lg:justify-start lg:mb-2">
+                <h5 class="w-28 px-3 py-2 rounded-full  bg-white "> 
+                    <i class="fa-solid fa-arrow-right"></i> About Us
+                </h5>
             </div>
             <div class=" gap-6  lg:flex  justify-between ">
                 <!-- Text Content  -->
